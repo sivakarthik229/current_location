@@ -1,1 +1,2 @@
-# current_location
+# Current Location
+- Displays current location and time.
