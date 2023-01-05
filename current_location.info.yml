@@ -1,5 +1,6 @@
-name: 'Current Location and Time'
+name: 'Current Location'
 type: module
 description: 'Display Current location and time.'
 package: Block
 core_version_requirement: ^9 || ^10
+configure: current_location.settings
