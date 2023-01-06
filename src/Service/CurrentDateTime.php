@@ -34,7 +34,12 @@ class CurrentDateTime {
     $timezone = $this->configFactory->get('timezone');
     if (!empty($timezone)) {
       $date = new \DateTime('now', new \DateTimeZone($timezone));
-      $format = $date->format('d') . 'th ' . $date->format('F Y - h:i A');
+      $time = $date->format('h:i a');
+      $date = $date->format('l, j F Y');
+      $format = [
+        'time' => $time,
+        'date' => $date,
+      ];
       return $format;
     }
   }
