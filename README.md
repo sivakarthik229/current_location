@@ -6,6 +6,12 @@
 ## INSTALLATION
 - Consult https://www.drupal.org/docs/extending-drupal/installing-modules to see how to install and manage modules in Drupal 8.
 
+### Composer
+If you use Composer, you can install 'Current Location' module using below command:
+```bash
+composer require sivakarthik229/current_location
+```
+
 ## CONFIGURATION
 - If you go to `admin/config/timezone/settings` you will see a fairly simple interface.
 - Add the Country, City name.
