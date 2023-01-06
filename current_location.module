@@ -1,0 +1,32 @@
+<?php
+
+/**
+ * @file
+ * This is the module to alter current date and time block.
+ */
+
+/**
+ * Implements hook_theme().
+ */
+function current_location_theme() {
+  return [
+    'block__current_location' => [
+      'template' => 'block--current-location',
+      'base hook' => 'block',
+    ],
+  ];
+}
+
+/**
+ * Implements hook_preprocess_block().
+ */
+function current_location_preprocess_block(&$variables) {
+  $blockId = $variables['elements']['#id'];
+  if ($blockId == 'current_location') {
+    $config = \Drupal::configFactory()->get('current_location.settings');
+    $variables['country'] = $config->get('country');
+    $variables['city'] = $config->get('city');
+    $variables['timezone'] = $config->get('timezone');
+    $variables['#cache']['max-age'] = 0;
+  }
+}
