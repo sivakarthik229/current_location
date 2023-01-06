@@ -1,5 +1,6 @@
 {
     "name": "sivakarthik229/current_location",
+    "type": "drupal-module",
     "description": "This module allows you to add the current date and time",
     "homepage": "https://github.com/sivakarthik229/current_location",
     "authors": [
