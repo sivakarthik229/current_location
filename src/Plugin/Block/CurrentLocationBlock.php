@@ -77,9 +77,12 @@ class CurrentLocationBlock extends BlockBase implements ContainerFactoryPluginIn
    * {@inheritdoc}
    */
   public function build() {
+    $date_time = $this->currentDateTime->getCurrentDateTime();
+    $time = '<h3 class="current-time">' . $date_time['time'] . '</h3>';
+    $date = '<p class="current-date">' . $date_time['date'] . '</p>';
     return [
       '#type' => 'markup',
-      '#markup' => $this->currentDateTime->getCurrentDateTime(),
+      '#markup' => $time . $date,
     ];
   }
 

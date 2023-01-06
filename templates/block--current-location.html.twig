@@ -27,18 +27,17 @@
    * @ingroup themeable
    */
   #}
-  <div{{ attributes }}>
+  {{ attach_library('current_location/current_location') }}
+  <div{{ attributes.addClass('current-location') }}>
     {{ title_prefix }}
     {% if label %}
       <h2{{ title_attributes }}><span class="timezone"></span>Timezone</h2>
     {% endif %}
     {{ title_suffix }}
     {% block content %}
-      <p><b>Current Date and Time: </b>{{ content }}</p>
+      {{ content }}
     {% endblock %}
     <div>
-     <p><b>Country: </b>{{ country }}</p>
-     <p><b>City: </b>{{ city }}</p>
-     <p><b>Timezone: </b>{{ timezone }}</p>
+     <p>Time in {{ city }}, {{ country }}, {{ timezone }}</p>
     </div>
   </div>
