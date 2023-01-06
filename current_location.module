@@ -26,7 +26,6 @@ function current_location_preprocess_block(&$variables) {
     $config = \Drupal::configFactory()->get('current_location.settings');
     $variables['country'] = $config->get('country');
     $variables['city'] = $config->get('city');
-    $variables['timezone'] = $config->get('timezone');
     $variables['#cache']['max-age'] = 0;
   }
 }
