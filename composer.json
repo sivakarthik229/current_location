@@ -1,0 +1,22 @@
+{
+    "name": "sivakarthik229/current_location",
+    "description": "This module allows you to add the current date and time",
+    "homepage": "https://github.com/sivakarthik229/current_location",
+    "authors": [
+      {
+        "name": "Siva Karthik Reddy",
+        "homepage": "https://github.com/sivakarthik229",
+        "role": "Owner"
+      }
+    ],
+    "support": {
+      "issues": "https://github.com/sivakarthik229/current_location/issues",
+      "source": "https://github.com/sivakarthik229/current_location.git"
+    },
+    "license": "GPL-2.0-or-later",
+    "minimum-stability": "dev",
+    "require": {
+      "drupal/core": "^9.0 || ^10.0"
+    }
+  }
+  

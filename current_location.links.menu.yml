@@ -1,0 +1,5 @@
+current_location.settings:
+  title: 'Timezone settings'
+  route_name: current_location.settings
+  description: 'Select the Timezone for the site.'
+  parent: system.admin_config_system
