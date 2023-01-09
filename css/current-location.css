@@ -1,4 +1,9 @@
 .current-location {
   display: inline-block;
   background-color: #f4f4f4;
+  padding: 0 10px;
+}
+.current-location h3.current-time,
+.current-location p {
+  margin: 10px 0;
 }
